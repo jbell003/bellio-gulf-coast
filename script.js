@@ -1,9 +1,12 @@
 (function(){
   var btn=document.querySelector('.menu-btn'),menu=document.getElementById('menu');
-  function setOpen(o){menu.classList.toggle('open',o);btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu');}
-  btn.addEventListener('click',function(){setOpen(!menu.classList.contains('open'));});
-  menu.addEventListener('click',function(e){if(e.target.tagName==='A')setOpen(false);});
+  if(btn && menu){
+    function setOpen(o){menu.classList.toggle('open',o);btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu');}
+    btn.addEventListener('click',function(){setOpen(!menu.classList.contains('open'));});
+    menu.addEventListener('click',function(e){if(e.target.tagName==='A')setOpen(false);});
+  }
   var form=document.getElementById('contact-form');
+  if(!form) return;
   form.addEventListener('submit',function(e){
     e.preventDefault();
     var f=new FormData(form);

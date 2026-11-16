@@ -137,3 +137,24 @@ section{padding:72px 0}
 .scan{display:flex;align-items:center;gap:10px;text-decoration:none;margin:0 0 16px;padding:8px;border:1px dashed #BFD0DC;border-radius:12px;background:#F7FAFC;width:100%}
 .scan img{width:64px;height:64px;object-fit:cover;border-radius:8px;margin:0;border:0}
 .scan span{font-size:.82rem;color:var(--navy);font-weight:600;text-align:left;line-height:1.3}
+
+/* order page */
+.order-hero{padding:56px 0 90px}
+.order-hero .lead{max-width:36em}
+.price{display:flex;flex-direction:column}
+.price .tag{align-self:flex-start}
+.price .pay-block{margin-top:auto;padding-top:14px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.price .pay-block .btn{margin-top:0}
+.addon{font-size:.92rem;color:var(--sand2);font-weight:600;margin:6px 0 0}
+.pay-row{display:flex;flex-wrap:wrap;gap:8px}
+.pay-row .btn{margin-top:0}
+@media(min-width:620px){.order-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.order-grid{grid-template-columns:repeat(3,1fr)}}
+.form-wrap{max-width:760px}
+.form-wide{box-shadow:var(--shadow)}
+.form .optional{font-weight:500;color:var(--mute);font-size:.85rem}
+.honey{position:absolute;left:-9999px;height:0;width:0;opacity:0;pointer-events:none}
+.thanks-in{max-width:720px}
+.thanks-in a{color:var(--sand2)}
+.menu a[aria-current="page"]{color:var(--teal-d)}
+.navy a.order-cta{color:var(--sand2);font-weight:600}

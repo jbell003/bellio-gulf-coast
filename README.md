@@ -27,5 +27,5 @@ When the domain is bought:
 4. Replace `https://jbell003.github.io/bellio-gulf-coast/` with `https://belliogulfcoast.com/` in `index.html` (canonical, og:url, og:image, twitter:image, JSON-LD).
 
 ## Notes
-- No testimonials, client results or client logos are shown. Haid Electric appears only as a sample demo.
+- No testimonials, client results or client logos are shown.
 - Update the phone placeholder `[Phone coming soon]` in `index.html` when a number is ready.
